@@ -75,12 +75,19 @@ body {
 #headPage {
   max-width: 1150px;
   margin: 0 auto;
+  position: relative;
 }
 
 .headPart {
   display: flex;
   justify-content: space-between;
   height: 91px;
+}
+
+.burger {
+  position: absolute;
+  width: 15px;
+  height: 10px;
 }
 
 .headLeft {
@@ -116,10 +123,24 @@ body {
   text-align: center;
 }
 
+.naviButton:hover {
+  color: #46b1de;
+}
+
 .headRight {
   display: flex;
   align-items: top;
   margin-top: 10px;
+}
+
+.headRight::before {
+  content: "";
+  background-image: url(img/phone-in-talk.svg);
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-top: 6px;
+  margin-right: 3px;
 }
 
 #phoneNum {
@@ -139,6 +160,7 @@ body {
 #headLanguage {
   font-size: 20px;
   margin-left: 20px;
+  margin-top: 3px;
 }
 
 #headLanguage span {
@@ -146,14 +168,45 @@ body {
 }
 
 #headLanguage #spanEN {
-  font-size: 27px;
-  font-family: "Roboto-Thin";
+  font-family: "Roboto";
+}
+
+#headLanguage #spanEN::before {
+  content: "|";
+  display: inline-block;
+  text-align: center;
+  width: 10px;
+  margin-right: 5px;
+  font-size: 24px;
+  font-weight: 100;
 }
 
 .titleDesribe {
   margin-top: 34px;
   position: relative;
   z-index: 2;
+  animation-name: move-from-down;
+  animation-duration: 0.7s;
+}
+
+@keyframes move-from-down {
+  0% {
+    position: absolute;
+    top: 500px;
+    opacity: 0;
+    z-index: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    top: 0px;
+    z-index: 1;
+  }
 }
 
 .titleDesribe h1 {
@@ -184,6 +237,8 @@ body {
   position: relative;
   font-family: "Roboto-Medium";
   z-index: 2;
+  animation-name: move-from-down;
+  animation-duration: 0.7s;
 }
 
 #link1 {
@@ -231,20 +286,30 @@ body {
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
+  animation-name: card-container;
+  animation-duration: 1s;
+  animation-timing-function: linear;
 }
 
-/* #cardContainer {
-  max-width: 980px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 280px);
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  grid-gap: 20px 70px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-} */
+@keyframes card-container {
+  0% {
+    position: absolute;
+    left: -500px;
+    opacity: 0;
+    z-index: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+    z-index: 1;
+  }
+}
 
 .card {
   width: 280px;
@@ -410,32 +475,246 @@ h2 #h2textPart {
 
 #toothCon {
   margin: 50px auto;
-  background-image: url(img/Logo_zub.png);
-  max-width: 950px;
+  background-image: url(img/Logo_ZubZub.png);
+  max-width: 1600px;
   height: 400px;
   background-repeat: no-repeat;
   background-position: center top;
   display: flex;
   flex-direction: column;
   row-gap: 50px;
+  position: relative;
+}
+
+#ellipsesCon {
+  position: relative;
+  width: 330px;
+  height: 302px;
+  position: absolute;
+  left: 410px;
+  right: 410px;
+  top: 0px;
+}
+
+#zub1 {
+  position: absolute;
+  left: 47px;
+  top: 27px;
+  animation-name: zub1;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+}
+
+@keyframes zub1 {
+  0% {
+    left: 153px;
+    top: 138.5px;
+  }
+  100% {
+    left: 47px;
+    top: 27px;
+  }
+}
+
+#zub2 {
+  position: absolute;
+  right: 47px;
+  top: 27px;
+  animation-name: zub2;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+}
+
+@keyframes zub2 {
+  0% {
+    right: 153px;
+    top: 138.5px;
+  }
+  100% {
+    right: 47px;
+    top: 27px;
+  }
+}
+
+#zub3 {
+  position: absolute;
+  left: 0px;
+  top: 140px;
+  animation-name: zub3;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+}
+
+@keyframes zub3 {
+  0% {
+    left: 153px;
+    top: 138.5px;
+  }
+  100% {
+    left: 0px;
+    top: 140px;
+  }
+}
+
+#zub4 {
+  position: absolute;
+  right: 0px;
+  top: 140px;
+  animation-name: zub4;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+}
+
+@keyframes zub4 {
+  0% {
+    right: 153px;
+    top: 138.5px;
+  }
+  100% {
+    right: 0px;
+    top: 140px;
+  }
+}
+
+#zub5 {
+  position: absolute;
+  bottom: 27px;
+  left: 47px;
+  animation-name: zub5;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+}
+
+@keyframes zub5 {
+  0% {
+    left: 153px;
+    bottom: 138.5px;
+  }
+  100% {
+    bottom: 27px;
+    left: 47px;
+  }
+}
+
+#zub6 {
+  position: absolute;
+  bottom: 27px;
+  right: 47px;
+  animation-name: zub6;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+}
+
+@keyframes zub6 {
+  0% {
+    right: 153px;
+    bottom: 138.5px;
+  }
+  100% {
+    bottom: 27px;
+    right: 47px;
+  }
 }
 
 #topTooth {
   display: flex;
-  column-gap: 330px;
+  column-gap: 320px;
   justify-content: center;
+  animation-name: top-tooth;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+}
+
+@keyframes top-tooth {
+  0% {
+    position: absolute;
+    opacity: 0;
+    column-gap: 1000px;
+    top: -300px;
+  }
+  50% {
+    position: absolute;
+    opacity: 0;
+    top: -200px;
+  }
+  50% {
+    position: absolute;
+    opacity: 0;
+    top: -100px;
+  }
+  100% {
+    position: relative;
+    z-index: 2;
+    top: 0px;
+    column-gap: 320px;
+  }
 }
 
 #middleTooth {
   display: flex;
-  column-gap: 400px;
+  column-gap: 350px;
   justify-content: center;
+  animation-name: middle-tooth;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+}
+
+@keyframes middle-tooth {
+  0% {
+    position: absolute;
+    opacity: 0;
+    column-gap: 1000px;
+    top: 150px;
+  }
+  50% {
+    position: absolute;
+    opacity: 0;
+    top: 150px;
+  }
+  50% {
+    position: absolute;
+    opacity: 0;
+    top: 150px;
+  }
+  100% {
+    position: relative;
+    z-index: 2;
+    column-gap: 350px;
+  }
 }
 
 #bottomTooth {
   display: flex;
   column-gap: 236px;
   justify-content: center;
+  animation-name: bottom-tooth;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+}
+
+@keyframes bottom-tooth {
+  0% {
+    position: absolute;
+    opacity: 0;
+    column-gap: 1000px;
+    bottom: -300px;
+  }
+  50% {
+    position: absolute;
+    opacity: 0;
+    bottom: -200px;
+  }
+  50% {
+    position: absolute;
+    opacity: 0;
+    bottom: -100px;
+  }
+  100% {
+    position: relative;
+    z-index: 2;
+    bottom: 0px;
+    column-gap: 236px;
+  }
 }
 
 .toothH3 {
@@ -452,6 +731,9 @@ h2 #h2textPart {
 #middleTooth div {
   max-width: 300px;
   height: 100px;
+}
+#secondToothMiddle {
+  min-width: 300px;
 }
 
 #bottomTooth div {
@@ -537,12 +819,20 @@ h2 #h2textPart {
   justify-content: space-evenly;
 }
 
+.userINFO:hover {
+  border: 2px solid #46b1de;
+}
+
 .inputLine {
   background: rgba(228, 228, 228, 0.89);
-  border: none;
   font-size: 19px;
   font-family: "Roboto-Bold";
   width: 150px;
+  border: none;
+}
+
+.hover:hover {
+  color: white;
 }
 
 #formUSER button {
@@ -628,6 +918,41 @@ h2 #h2textPart {
 
 #UaEn {
   color: black;
+  display: flex;
+  align-items: center;
+}
+
+.UAEN span:hover {
+  color: white;
+}
+
+.UAEN {
+  display: block;
+}
+
+#stick {
+  display: block;
+  width: 10px;
+  margin-right: 10px;
+}
+
+.ua:hover {
+  color: white;
+}
+
+.en:hover {
+  color: white;
+}
+
+#stick::before {
+  content: "|";
+  display: block;
+  text-align: center;
+  width: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 24px;
+  font-weight: 100;
 }
 
 #contacts {
@@ -639,6 +964,25 @@ h2 #h2textPart {
   display: flex;
   align-items: center;
   column-gap: 15px;
+  position: relative;
+}
+
+#phone2::before {
+  content: "";
+  background-image: url(img/phone2.png);
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+}
+
+#phone2:hover::after {
+  content: "";
+  width: 181px;
+  border-bottom: 1.5px solid white;
+  display: inline-block;
+  position: absolute;
+  left: 43px;
+  top: 30px;
 }
 
 #socialMedia3 {
@@ -653,10 +997,26 @@ h2 #h2textPart {
   column-gap: 15px;
 }
 
+#instagram::before {
+  content: "";
+  background-image: url(img/instagram.png);
+  width: 27px;
+  height: 27px;
+  display: inline-block;
+}
+
 #email {
   display: flex;
   align-items: center;
   column-gap: 15px;
+}
+
+#email::before {
+  content: "";
+  background-image: url(img/email.png);
+  width: 32px;
+  height: 32px;
+  display: inline-block;
 }
 
 #copyright {
@@ -1046,18 +1406,21 @@ h2 #h2textPart {
     display: flex;
     column-gap: 30px;
     justify-content: center;
+    animation-name: none;
   }
 
   #middleTooth {
     display: flex;
     column-gap: 30px;
     justify-content: center;
+    animation-name: none;
   }
 
   #bottomTooth {
     display: flex;
     column-gap: 30px;
     justify-content: center;
+    animation-name: none;
   }
 
   .toothH3 {
@@ -1067,12 +1430,12 @@ h2 #h2textPart {
   }
 
   #topTooth div {
-    max-width: 300px;
+    max-width: 316px;
     height: none;
   }
 
   #middleTooth div {
-    max-width: 300px;
+    max-width: 316px;
     height: none;
   }
 
@@ -1083,6 +1446,14 @@ h2 #h2textPart {
 
   .firstTextTooth {
     text-align: end;
+  }
+
+  #ellipsesCon {
+    opacity: 0;
+    position: absolute;
+    left: 0px;
+    width: 0px;
+    height: 0px;
   }
 
   .attentionCon {
@@ -1943,4 +2314,74 @@ h2 #h2textPart {
     color: white;
     line-height: 400%;
   }
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+  }
+
+  .burger {
+    position: absolute;
+    width: 25px;
+    height: 16px;
+    right: 38px;
+    top: 70px;
+    z-index: 4;
+  }
+
+  .burger span{
+    position: absolute;
+    width: 25px;
+    height: 16px;
+    z-index: 5;
+  }
+
+  .burger::before {
+    content: "";
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: 0px;
+    background-color: black;
+    transition: 0.5s;
+  }
+
+  .burger:hover:before{
+    transform:rotate(-45deg);
+    background-color: #0591cc;
+    top: 7px;
+  }
+
+  .burger span::after {
+    content: "";
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: 7px;
+    background-color: black;
+    transition: 0.5s;
+  }
+
+  .burger span:hover::after{
+    opacity: 0;
+  }
+
+  .burger::after {
+    content: "";
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    background-color: black;
+    transition: 0.5s;
+  }
+
+  .burger:hover::after{
+    transform:rotate(45deg);
+    background-color: #0591cc;
+    bottom: 7px;
+  }
+
 }
