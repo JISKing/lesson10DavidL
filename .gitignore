@@ -3,5 +3,5 @@
 .idea
 target/
 build/
-.style.css
-.check3.txt
+style.css
+check3.txt
