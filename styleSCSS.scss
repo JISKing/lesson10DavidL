@@ -205,26 +205,6 @@
           }
         }
       }
-      #lady {
-        z-index: 0;
-        position: absolute;
-        width: 572px;
-        height: 463px;
-        right: 110px;
-        top: 200.58px;
-        background: url(/img/ladyLady.png);
-      }
-      #ellipse {
-        z-index: 0;
-        position: absolute;
-        width: 310px;
-        height: 510.48px;
-        right: 141.85px;
-        top: 164.53px;
-        background: #ffffff;
-        filter: blur(60px);
-        transform: rotate(-3.98deg);
-      }
     }
     #lady {
       z-index: 0;
@@ -233,7 +213,7 @@
       height: 463px;
       right: 110px;
       top: 200.58px;
-      background: url(/img/ladyLady.png);
+      background: url(img/ladyLady.png);
     }
     #ellipse {
       z-index: 0;
@@ -1082,7 +1062,7 @@
         height: 463px;
         right: 77px;
         top: 200.58px;
-        background: url(/img/ladyLady.png);
+        background: url(img/ladyLady.png);
       }
       #ellipse {
         z-index: 0;
