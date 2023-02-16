@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "SofiaSans";
+  font-display: swap;
+  src: url("./fonts/SofiaSans.ttf") format("ttf"),
+    url("./fonts/SofiaSans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("./fonts/Roboto-Regular.ttf") format("ttf"),
+    url("./fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  font-display: swap;
+  src: url("./fonts/Roboto-Medium.ttf") format("ttf"),
+    url("./fonts/Roboto-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  font-display: swap;
+  src: url("./fonts/Roboto-Bold.ttf") format("ttf"),
+    url("./fonts/Roboto-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  font-display: swap;
+  src: url("./fonts/Roboto-Thin.ttf") format("ttf"),
+    url("./fonts/Roboto-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  font-display: swap;
+  src: url("./fonts/Roboto-Light.ttf") format("ttf"),
+    url("./fonts/Roboto-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  font-display: swap;
+  src: url("./fonts/Montserrat-SemiBold.ttf") format("ttf"),
+    url("./fonts/Montserrat-SemiBold.woff") format("woff");
+}
+
+$mainColor: #46b1de;
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  position: relative;
+  padding: 0px;
+  margin: 0px auto;
+  font-family: "Roboto";
+  min-width: 1020px;
+}
+
+%title{font-family: "Roboto"; margin: 0px;}
+
+@mixin sectionMargin($marginBetween) {margin:$marginBetween;}

@@ -1,52 +1,38 @@
 @font-face {
   font-family: "SofiaSans";
   font-display: swap;
-  src: url("./fonts/SofiaSans.ttf") format("ttf"),
-    url("./fonts/SofiaSans.woff") format("woff");
+  src: url("./fonts/SofiaSans.ttf") format("ttf"), url("./fonts/SofiaSans.woff") format("woff");
 }
-
 @font-face {
   font-family: "Roboto";
   font-display: swap;
-  src: url("./fonts/Roboto-Regular.ttf") format("ttf"),
-    url("./fonts/Roboto-Regular.woff") format("woff");
+  src: url("./fonts/Roboto-Regular.ttf") format("ttf"), url("./fonts/Roboto-Regular.woff") format("woff");
 }
-
 @font-face {
   font-family: "Roboto-Medium";
   font-display: swap;
-  src: url("./fonts/Roboto-Medium.ttf") format("ttf"),
-    url("./fonts/Roboto-Medium.woff") format("woff");
+  src: url("./fonts/Roboto-Medium.ttf") format("ttf"), url("./fonts/Roboto-Medium.woff") format("woff");
 }
-
 @font-face {
   font-family: "Roboto-Bold";
   font-display: swap;
-  src: url("./fonts/Roboto-Bold.ttf") format("ttf"),
-    url("./fonts/Roboto-Bold.woff") format("woff");
+  src: url("./fonts/Roboto-Bold.ttf") format("ttf"), url("./fonts/Roboto-Bold.woff") format("woff");
 }
-
 @font-face {
   font-family: "Roboto-Thin";
   font-display: swap;
-  src: url("./fonts/Roboto-Thin.ttf") format("ttf"),
-    url("./fonts/Roboto-Thin.woff") format("woff");
+  src: url("./fonts/Roboto-Thin.ttf") format("ttf"), url("./fonts/Roboto-Thin.woff") format("woff");
 }
-
 @font-face {
   font-family: "Roboto-Light";
   font-display: swap;
-  src: url("./fonts/Roboto-Light.ttf") format("ttf"),
-    url("./fonts/Roboto-Light.woff") format("woff");
+  src: url("./fonts/Roboto-Light.ttf") format("ttf"), url("./fonts/Roboto-Light.woff") format("woff");
 }
-
 @font-face {
   font-family: "Montserrat-SemiBold";
   font-display: swap;
-  src: url("./fonts/Montserrat-SemiBold.ttf") format("ttf"),
-    url("./fonts/Montserrat-SemiBold.woff") format("woff");
+  src: url("./fonts/Montserrat-SemiBold.ttf") format("ttf"), url("./fonts/Montserrat-SemiBold.woff") format("woff");
 }
-
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -60,76 +46,34 @@ body {
   min-width: 1020px;
 }
 
+.second-screen h2 {
+  font-family: "Roboto";
+  margin: 0px;
+}
+
 .first-screen {
   background-image: url(img/backgroundTOP.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 663px;
-
-  margin: 0 auto;
+  margin: 0px auto 90px;
   padding: 60px 0px 0px 0px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .first-screen #headPage {
   max-width: 1150px;
   margin: 0 auto;
   position: relative;
 }
-
-.first-screen #lady {
-  z-index: 0;
-  position: absolute;
-  width: 572px;
-  height: 463px;
-  right: 110px;
-  top: 200.58px;
-
-  background: url(/img/ladyLady.png);
-}
-
-.first-screen #ellipse {
-  z-index: 0;
-  position: absolute;
-  width: 310px;
-  height: 510.48px;
-  right: 141.85px;
-  top: 164.53px;
-
-  background: #ffffff;
-  filter: blur(60px);
-  transform: rotate(-3.98deg);
-}
-
 .first-screen #headPage .headPart {
   display: flex;
   justify-content: space-between;
   height: 91px;
 }
-
 .first-screen #headPage .headPart .headLeft {
   display: flex;
   align-items: center;
 }
-
-.first-screen #headPage .headPart #naviPanel {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  column-gap: 54px;
-}
-
-.first-screen #headPage .headPart .headRight {
-  display: flex;
-  align-items: top;
-  margin-top: 10px;
-}
-
-.first-screen #headPage .headPart .burger {
-  position: absolute;
-  width: 15px;
-  height: 10px;
-}
-
 .first-screen #headPage .headPart .headLeft #title {
   font-size: 38px;
   margin: 0px;
@@ -138,12 +82,15 @@ body {
   font-family: "SofiaSans";
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .first-screen #headPage .headPart .headLeft #title span {
   font-size: 26.85px;
   text-shadow: none;
 }
-
+.first-screen #headPage .headPart #naviPanel {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 54px;
+}
 .first-screen #headPage .headPart #naviPanel .naviButton {
   text-decoration: none;
   font-size: 16px;
@@ -151,11 +98,14 @@ body {
   margin-top: 18px;
   text-align: center;
 }
-
 .first-screen #headPage .headPart #naviPanel .naviButton:hover {
   color: #46b1de;
 }
-
+.first-screen #headPage .headPart .headRight {
+  display: flex;
+  align-items: top;
+  margin-top: 10px;
+}
 .first-screen #headPage .headPart .headRight::before {
   content: "";
   background-image: url(img/phone-in-talk.svg);
@@ -165,28 +115,23 @@ body {
   margin-top: 6px;
   margin-right: 3px;
 }
-
 .first-screen #headPage .headPart .headRight #phoneNum {
   font-size: 16px;
   color: black;
   text-decoration: none;
   margin-top: 8.5px;
 }
-
 .first-screen #headPage .headPart .headRight #headLanguage {
   font-size: 20px;
   margin-left: 20px;
   margin-top: 3px;
 }
-
 .first-screen #headPage .headPart .headRight #headLanguage span {
   font-family: "Roboto-Bold";
 }
-
 .first-screen #headPage .headPart .headRight #headLanguage #spanEN {
   font-family: "Roboto";
 }
-
 .first-screen #headPage .headPart .headRight #headLanguage #spanEN::before {
   content: "|";
   display: inline-block;
@@ -196,7 +141,11 @@ body {
   font-size: 24px;
   font-weight: 100;
 }
-
+.first-screen #headPage .headPart .burger {
+  position: absolute;
+  width: 15px;
+  height: 10px;
+}
 .first-screen #headPage .titleDesribe {
   margin-top: 34px;
   position: relative;
@@ -204,7 +153,6 @@ body {
   animation-name: move-from-down;
   animation-duration: 0.7s;
 }
-
 .first-screen #headPage .titleDesribe h1 {
   font-size: 40px;
   text-transform: uppercase;
@@ -212,11 +160,9 @@ body {
   line-height: 52px;
   letter-spacing: 0.1em;
 }
-
 .first-screen #headPage .titleDesribe h1 span {
   color: #46b1de;
 }
-
 .first-screen #headPage .titleDesribe p {
   max-width: 461px;
   max-height: 66px;
@@ -224,7 +170,6 @@ body {
   line-height: 22.4px;
   margin-top: 30px;
 }
-
 .first-screen #headPage .buttons {
   display: flex;
   gap: 20px 120px;
@@ -236,7 +181,6 @@ body {
   animation-name: move-from-down;
   animation-duration: 0.7s;
 }
-
 .first-screen #headPage .buttons #link1 {
   text-decoration: none;
   color: whitesmoke;
@@ -245,12 +189,10 @@ body {
   width: 180px;
   height: 60px;
   line-height: 60px;
-
   background: linear-gradient(97.59deg, #46b1de 9.8%, #0591cc 95.1%);
   box-shadow: 0px 2px 10px #46b1de;
   border-radius: 8px;
 }
-
 .first-screen #headPage .buttons #link2 {
   text-decoration: none;
   color: #46b1de;
@@ -260,14 +202,12 @@ body {
   width: 180px;
   height: 60px;
   line-height: 60px;
-
   background: #ffffff;
   mix-blend-mode: normal;
   border: 1px solid #dde0dc;
   box-shadow: 0px 2px 10px #dde0dc;
   border-radius: 8px;
 }
-
 .first-screen #headPage #cardContainer {
   max-width: 980px;
   display: flex;
@@ -280,7 +220,6 @@ body {
   animation-duration: 1s;
   animation-timing-function: linear;
 }
-
 .first-screen #headPage #cardContainer .card {
   width: 280px;
   height: 120px;
@@ -290,43 +229,35 @@ body {
   box-sizing: border-box;
   z-index: 1;
   align-items: center;
-
   background: #ffffff;
   border: 1px solid #d8e1e1;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
 }
-
 .first-screen #headPage #cardContainer .card .number1 {
   color: #46b1de;
   font-size: 65px;
   margin: 0px 15px 0px 15px;
 }
-
 .first-screen #headPage #cardContainer .card .number2 {
   color: #46b1de;
   font-size: 65px;
   margin: 0px 15px 0px 15px;
 }
-
 .first-screen #headPage #cardContainer .card .number3 {
   color: #46b1de;
   font-size: 65px;
   margin: 0px 15px 0px 15px;
 }
-
 .first-screen #headPage #cardContainer .card #card-text1 {
   font-size: 14px;
 }
-
 .first-screen #headPage #cardContainer .card #card-text2 {
   font-size: 14px;
 }
-
 .first-screen #headPage #cardContainer .card #card-text3 {
   font-size: 14px;
 }
-
 .first-screen #headPage #lady {
   z-index: 0;
   position: absolute;
@@ -334,10 +265,8 @@ body {
   height: 463px;
   right: 110px;
   top: 200.58px;
-
   background: url(/img/ladyLady.png);
 }
-
 .first-screen #headPage #ellipse {
   z-index: 0;
   position: absolute;
@@ -345,7 +274,26 @@ body {
   height: 510.48px;
   right: 141.85px;
   top: 164.53px;
-
+  background: #ffffff;
+  filter: blur(60px);
+  transform: rotate(-3.98deg);
+}
+.first-screen #lady {
+  z-index: 0;
+  position: absolute;
+  width: 572px;
+  height: 463px;
+  right: 110px;
+  top: 200.58px;
+  background: url(/img/ladyLady.png);
+}
+.first-screen #ellipse {
+  z-index: 0;
+  position: absolute;
+  width: 310px;
+  height: 510.48px;
+  right: 141.85px;
+  top: 164.53px;
   background: #ffffff;
   filter: blur(60px);
   transform: rotate(-3.98deg);
@@ -354,28 +302,23 @@ body {
 .second-screen {
   padding: 148px 0px 0px 0px;
   max-width: 1150px;
-  margin: auto;
+  margin: 90px auto;
 }
-
 .second-screen h2 {
   text-align: center;
   margin: 0px;
   font-size: 34px;
-  font-family: "Roboto";
   line-height: 130%;
 }
-
 .second-screen h2 #h2textPart {
   color: #46b1de;
   font-family: "Roboto-Bold";
 }
-
 .second-screen #textOfTitle {
   margin: 5px 0px 50px;
   line-height: 140%;
   text-align: center;
 }
-
 .second-screen #cardConSecond {
   max-width: 1020px;
   min-width: 328px;
@@ -390,7 +333,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .second-screen #cardConSecond div .card1 {
   margin-bottom: 12px;
 }
@@ -400,7 +342,6 @@ body {
 .second-screen #cardConSecond div .card5 {
   margin-bottom: 12px;
 }
-
 .second-screen #cardConSecond div .sixCards {
   background-color: white;
   border-radius: 8px;
@@ -408,13 +349,11 @@ body {
   width: 300px;
   height: 176px;
 }
-
 .second-screen #cardConSecond div .sixCards .num_n_text {
   display: flex;
   align-items: center;
   column-gap: 10px;
 }
-
 .second-screen #cardConSecond div .sixCards .num_n_text .num {
   color: #46b1de;
   font-size: 40px;
@@ -426,23 +365,19 @@ body {
   font-family: "Roboto-Bold";
   font-size: 18px;
 }
-
 .second-screen #cardConSecond div .sixCards .textOfCard {
   margin-top: 16px;
   line-height: 140%;
 }
-
 .second-screen #servicesCon #whatServices h2 {
   font-size: 34px;
   color: #1b1d1f;
   text-align: center;
   margin-top: 90px;
 }
-
 .second-screen #servicesCon #whatServices h2 span {
   color: #46b1de;
 }
-
 .second-screen #servicesCon #toothCon {
   margin: 50px auto;
   background-image: url(img/Logo_ZubZub.png);
@@ -455,7 +390,6 @@ body {
   row-gap: 50px;
   position: relative;
 }
-
 .second-screen #servicesCon #toothCon #ellipsesCon {
   position: relative;
   width: 330px;
@@ -465,7 +399,6 @@ body {
   right: 410px;
   top: 0px;
 }
-
 .second-screen #servicesCon #toothCon #ellipsesCon #zub1 {
   position: absolute;
   left: 47px;
@@ -474,7 +407,6 @@ body {
   animation-duration: 0.7s;
   animation-timing-function: linear;
 }
-
 .second-screen #servicesCon #toothCon #ellipsesCon #zub2 {
   position: absolute;
   right: 47px;
@@ -483,7 +415,6 @@ body {
   animation-duration: 0.7s;
   animation-timing-function: linear;
 }
-
 .second-screen #servicesCon #toothCon #ellipsesCon #zub3 {
   position: absolute;
   left: 0px;
@@ -492,7 +423,6 @@ body {
   animation-duration: 0.7s;
   animation-timing-function: linear;
 }
-
 .second-screen #servicesCon #toothCon #ellipsesCon #zub4 {
   position: absolute;
   right: 0px;
@@ -501,7 +431,6 @@ body {
   animation-duration: 0.7s;
   animation-timing-function: linear;
 }
-
 .second-screen #servicesCon #toothCon #ellipsesCon #zub5 {
   position: absolute;
   bottom: 27px;
@@ -510,7 +439,6 @@ body {
   animation-duration: 0.7s;
   animation-timing-function: linear;
 }
-
 .second-screen #servicesCon #toothCon #ellipsesCon #zub6 {
   position: absolute;
   bottom: 27px;
@@ -519,7 +447,6 @@ body {
   animation-duration: 0.7s;
   animation-timing-function: linear;
 }
-
 .second-screen #servicesCon #toothCon #topTooth {
   display: flex;
   column-gap: 320px;
@@ -528,7 +455,10 @@ body {
   animation-duration: 0.7s;
   animation-timing-function: linear;
 }
-
+.second-screen #servicesCon #toothCon #topTooth div {
+  max-width: 300px;
+  height: 100px;
+}
 .second-screen #servicesCon #toothCon #middleTooth {
   display: flex;
   column-gap: 350px;
@@ -537,7 +467,13 @@ body {
   animation-duration: 0.7s;
   animation-timing-function: linear;
 }
-
+.second-screen #servicesCon #toothCon #middleTooth div {
+  max-width: 300px;
+  height: 100px;
+}
+.second-screen #servicesCon #toothCon #middleTooth #secondToothMiddle {
+  min-width: 300px;
+}
 .second-screen #servicesCon #toothCon #bottomTooth {
   display: flex;
   column-gap: 236px;
@@ -546,36 +482,23 @@ body {
   animation-duration: 0.7s;
   animation-timing-function: linear;
 }
-
-.second-screen #servicesCon #toothCon div .firstTextTooth .toothH3 {
-  font-size: 20px;
-  color: #46b1de;
-  font-family: "Roboto-Bold";
-}
-
-.second-screen #servicesCon #toothCon #topTooth div {
-  max-width: 300px;
-  height: 100px;
-}
-
-.second-screen #servicesCon #toothCon #middleTooth div {
-  max-width: 300px;
-  height: 100px;
-}
-
-.second-screen #servicesCon #toothCon #middleTooth #secondToothMiddle {
-  min-width: 300px;
-}
-
 .second-screen #servicesCon #toothCon #bottomTooth div {
   max-width: 316px;
   height: 100px;
 }
-
 .second-screen #servicesCon #toothCon div .firstTextTooth {
   text-align: end;
 }
-
+.second-screen #servicesCon #toothCon div div .toothH3 {
+  font-size: 20px;
+  color: #46b1de;
+  font-family: "Roboto-Bold";
+}
+.second-screen #servicesCon div #logoZub {
+  position: absolute;
+  z-index: -1;
+  width: 0px;
+}
 .second-screen .attentionCon {
   display: flex;
   justify-content: center;
@@ -584,13 +507,6 @@ body {
   align-items: center;
   margin-top: 100px;
 }
-
-.second-screen #servicesCon div #logoZub {
-  position: absolute;
-  z-index: -1;
-  width: 0px;
-}
-
 .second-screen #inputForm {
   max-width: 845px;
   min-height: 265px;
@@ -604,7 +520,6 @@ body {
   padding: 9px 12px;
   margin-top: 90px;
 }
-
 .second-screen #inputForm #inputContainer {
   width: 821px;
   min-height: 247px;
@@ -614,18 +529,15 @@ body {
   color: #1b1d1f;
   padding: 30px 0px 0px;
 }
-
 .second-screen #inputForm #inputContainer h2 {
   font-size: 32px;
   text-align: center;
   line-height: 130%;
 }
-
 .second-screen #inputForm #inputContainer p {
   text-align: center;
   line-height: 140%;
 }
-
 .second-screen #inputForm #inputContainer #formUSER {
   display: flex;
   justify-content: center;
@@ -635,25 +547,19 @@ body {
   flex-wrap: wrap;
   row-gap: 32px;
 }
-
 .second-screen #inputForm #inputContainer #formUSER .userINFO {
   width: 233px;
   height: 57px;
-
   background: rgba(217, 217, 217, 0.71);
   border-radius: 8px;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   justify-content: space-evenly;
 }
-
 .second-screen #inputForm #inputContainer #formUSER .userINFO:hover {
   border: 2px solid #46b1de;
 }
-
 .second-screen #inputForm #inputContainer #formUSER .userINFO .inputLine {
   background: rgba(228, 228, 228, 0.89);
   font-size: 19px;
@@ -661,24 +567,16 @@ body {
   width: 150px;
   border: none;
 }
-
-.footer #footPart #leftFoot #bottomPartLeft div .hover:hover {
-  color: white;
-}
-
 .second-screen #inputForm #inputContainer #formUSER button {
   width: 180px;
   height: 57px;
-
   background: #46b1de;
   border-radius: 8px;
-
   font-family: "Roboto-Bold";
   color: #ffffff;
   font-size: 19px;
   border: none;
 }
-
 .second-screen #bottomPictures {
   display: flex;
   flex-wrap: wrap;
@@ -696,81 +594,39 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
 .footer #footPart {
   display: flex;
   justify-content: center;
   column-gap: 350px;
 }
-
 .footer #footPart #leftFoot {
   color: #062949;
   display: flex;
   flex-direction: column;
   font-size: 20px;
 }
-
-.footer #footPart #rightFoot {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  row-gap: 15px;
-  font-size: 20px;
-}
-
-.footer #footPart #leftFoot #topPartLeft {
-  display: flex;
-  align-items: center;
-}
-
-.footer #footPart #leftFoot #topPartLeft #titleFooter {
-  font-size: 38px;
-  color: #0f2d4a;
-  display: inline-block;
-  font-family: "SofiaSans";
-  line-height: 28px;
-}
-
-.footer #footPart #leftFoot #topPartLeft #titleFooter span {
-  font-size: 26.85px;
-}
-
-.footer #footPart #leftFoot #topPartLeft #logoFooter {
-  width: 77.57px;
-  height: 80.56px;
-}
-
 .footer #footPart #leftFoot #bottomPartLeft {
   display: flex;
   justify-content: center;
   column-gap: 163px;
   margin-top: 60px;
 }
-
+.footer #footPart #leftFoot #bottomPartLeft div .hover:hover {
+  color: white;
+}
 .footer #footPart #leftFoot #bottomPartLeft div #UaEn {
   color: black;
   display: flex;
   align-items: center;
 }
-
 .footer #footPart #leftFoot #bottomPartLeft div #UaEn .UAEN {
   display: block;
 }
-
 .footer #footPart #leftFoot #bottomPartLeft div #UaEn #stick {
   display: block;
   width: 10px;
   margin-right: 10px;
 }
-
-.footer #footPart #leftFoot #bottomPartLeft div #UaEn .ua:hover {
-  color: white;
-}
-
-.footer #footPart #leftFoot #bottomPartLeft div #UaEn .en:hover {
-  color: white;
-}
-
 .footer #footPart #leftFoot #bottomPartLeft div #UaEn #stick::before {
   content: "|";
   display: block;
@@ -781,19 +637,47 @@ body {
   font-size: 24px;
   font-weight: 100;
 }
-
+.footer #footPart #leftFoot #bottomPartLeft div #UaEn .ua:hover {
+  color: white;
+}
+.footer #footPart #leftFoot #bottomPartLeft div #UaEn .en:hover {
+  color: white;
+}
+.footer #footPart #leftFoot #topPartLeft {
+  display: flex;
+  align-items: center;
+}
+.footer #footPart #leftFoot #topPartLeft #titleFooter {
+  font-size: 38px;
+  color: #0f2d4a;
+  display: inline-block;
+  font-family: "SofiaSans";
+  line-height: 28px;
+}
+.footer #footPart #leftFoot #topPartLeft #titleFooter span {
+  font-size: 26.85px;
+}
+.footer #footPart #leftFoot #topPartLeft #logoFooter {
+  width: 77.57px;
+  height: 80.56px;
+}
+.footer #footPart #rightFoot {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  font-size: 20px;
+}
 .footer #footPart #rightFoot #contacts {
   font-size: 34px;
   font-family: "Roboto-Medium";
 }
-
 .footer #footPart #rightFoot #phone2 {
   display: flex;
   align-items: center;
   column-gap: 15px;
   position: relative;
 }
-
 .footer #footPart #rightFoot #phone2::before {
   content: "";
   background-image: url(img/phone2.png);
@@ -801,7 +685,6 @@ body {
   height: 28px;
   display: inline-block;
 }
-
 .footer #footPart #rightFoot #phone2:hover::after {
   content: "";
   width: 181px;
@@ -811,19 +694,16 @@ body {
   left: 43px;
   top: 30px;
 }
-
 .footer #footPart #rightFoot #socialMedia3 {
   display: flex;
   align-items: center;
   column-gap: 25px;
 }
-
 .footer #footPart #rightFoot #instagram {
   display: flex;
   align-items: center;
   column-gap: 15px;
 }
-
 .footer #footPart #rightFoot #instagram::before {
   content: "";
   background-image: url(img/instagram.png);
@@ -831,13 +711,11 @@ body {
   height: 27px;
   display: inline-block;
 }
-
 .footer #footPart #rightFoot #email {
   display: flex;
   align-items: center;
   column-gap: 15px;
 }
-
 .footer #footPart #rightFoot #email::before {
   content: "";
   background-image: url(img/email.png);
@@ -845,7 +723,6 @@ body {
   height: 32px;
   display: inline-block;
 }
-
 .footer #footPart #rightFoot #copyright {
   display: flex;
   justify-content: right;
@@ -853,6 +730,175 @@ body {
   color: white;
 }
 
+@keyframes move-from-down {
+  0% {
+    position: absolute;
+    top: 500px;
+    opacity: 0;
+    z-index: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    top: 0px;
+    z-index: 1;
+  }
+}
+@keyframes card-container {
+  0% {
+    position: absolute;
+    left: -500px;
+    opacity: 0;
+    z-index: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+    z-index: 1;
+  }
+}
+@keyframes zub1 {
+  0% {
+    left: 153px;
+    top: 138.5px;
+  }
+  100% {
+    left: 47px;
+    top: 27px;
+  }
+}
+@keyframes zub2 {
+  0% {
+    right: 153px;
+    top: 138.5px;
+  }
+  100% {
+    right: 47px;
+    top: 27px;
+  }
+}
+@keyframes zub3 {
+  0% {
+    left: 153px;
+    top: 138.5px;
+  }
+  100% {
+    left: 0px;
+    top: 140px;
+  }
+}
+@keyframes zub4 {
+  0% {
+    right: 153px;
+    top: 138.5px;
+  }
+  100% {
+    right: 0px;
+    top: 140px;
+  }
+}
+@keyframes zub5 {
+  0% {
+    left: 153px;
+    bottom: 138.5px;
+  }
+  100% {
+    bottom: 27px;
+    left: 47px;
+  }
+}
+@keyframes zub6 {
+  0% {
+    right: 153px;
+    bottom: 138.5px;
+  }
+  100% {
+    bottom: 27px;
+    right: 47px;
+  }
+}
+@keyframes top-tooth {
+  0% {
+    position: absolute;
+    opacity: 0;
+    column-gap: 1000px;
+    top: -300px;
+  }
+  50% {
+    position: absolute;
+    opacity: 0;
+    top: -200px;
+  }
+  50% {
+    position: absolute;
+    opacity: 0;
+    top: -100px;
+  }
+  100% {
+    position: relative;
+    z-index: 2;
+    top: 0px;
+    column-gap: 320px;
+  }
+}
+@keyframes middle-tooth {
+  0% {
+    position: absolute;
+    opacity: 0;
+    column-gap: 1000px;
+    top: 150px;
+  }
+  50% {
+    position: absolute;
+    opacity: 0;
+    top: 150px;
+  }
+  50% {
+    position: absolute;
+    opacity: 0;
+    top: 150px;
+  }
+  100% {
+    position: relative;
+    z-index: 2;
+    column-gap: 350px;
+  }
+}
+@keyframes bottom-tooth {
+  0% {
+    position: absolute;
+    opacity: 0;
+    column-gap: 1000px;
+    bottom: -300px;
+  }
+  50% {
+    position: absolute;
+    opacity: 0;
+    bottom: -200px;
+  }
+  50% {
+    position: absolute;
+    opacity: 0;
+    bottom: -100px;
+  }
+  100% {
+    position: relative;
+    z-index: 2;
+    bottom: 0px;
+    column-gap: 236px;
+  }
+}
 @media screen and (max-width: 992px) {
   * {
     box-sizing: border-box;
@@ -872,19 +918,15 @@ body {
     background-image: url(img/backgroundTOP.jpg);
     background-repeat: no-repeat;
     background-size: unset;
-    /* background-size: auto; */
     height: 663px;
-
     margin: 0 auto;
     padding: 60px 0px 0px 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-
   .first-screen #headPage {
     max-width: 992px;
     margin: 0 auto;
   }
-
   .first-screen #headPage .headPart {
     display: flex;
     justify-content: space-between;
@@ -892,21 +934,10 @@ body {
     padding-left: 38px;
     padding-right: 38px;
   }
-
   .first-screen #headPage .headPart .headLeft {
     display: flex;
     align-items: center;
   }
-
-  .first-screen #headPage .headPart #naviPanel {
-    width: 0px;
-    opacity: 0px;
-    margin: 0px;
-    position: absolute;
-    z-index: -1;
-
-  }
-
   .first-screen #headPage .headPart .headLeft #title {
     font-size: 28px;
     margin: 0px;
@@ -915,29 +946,31 @@ body {
     font-family: "SofiaSans";
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-
   .first-screen #headPage .headPart .headLeft #title span {
     font-size: 18px;
     text-shadow: none;
   }
-
   .first-screen #headPage .headPart .headLeft #logo {
     width: 54.292px;
     height: 56.385px;
   }
-
+  .first-screen #headPage .headPart #naviPanel {
+    width: 0px;
+    opacity: 0px;
+    margin: 0px;
+    position: absolute;
+    z-index: -1;
+  }
   .first-screen #headPage .headPart .headRight {
     display: flex;
     align-items: top;
     margin-top: 12px;
   }
-
   .first-screen #headPage .headPart .headRight #phoneNum {
     color: black;
     text-decoration: none;
     margin-top: 8.5px;
   }
-
   .first-screen #headPage .headPart .headRight #headLanguage {
     width: 0px;
     opacity: 0px;
@@ -945,23 +978,19 @@ body {
     position: absolute;
     z-index: -1;
   }
-
   .first-screen #headPage .headPart .headRight #headLanguage span {
     font-family: "Roboto-Bold";
   }
-
   .first-screen #headPage .headPart .headRight #headLanguage #spanEN {
     font-size: 27px;
     font-family: "Roboto-Thin";
   }
-
   .first-screen #headPage .titleDesribe {
     margin-top: 34px;
     position: relative;
     z-index: 2;
     padding-left: 38px;
   }
-
   .first-screen #headPage .titleDesribe h1 {
     font-size: 35px;
     text-transform: uppercase;
@@ -969,11 +998,9 @@ body {
     line-height: 45px;
     letter-spacing: 0.1em;
   }
-
   .first-screen #headPage .titleDesribe h1 span {
     color: #46b1de;
   }
-
   .first-screen #headPage .titleDesribe p {
     max-width: 461px;
     max-height: 66px;
@@ -981,7 +1008,6 @@ body {
     line-height: 22.4px;
     margin-top: 20px;
   }
-
   .first-screen #headPage .buttons {
     display: flex;
     gap: 20px 120px;
@@ -992,7 +1018,6 @@ body {
     z-index: 2;
     padding-left: 38px;
   }
-
   .first-screen #headPage .buttons #link1 {
     text-decoration: none;
     color: whitesmoke;
@@ -1001,12 +1026,10 @@ body {
     width: 180px;
     height: 60px;
     line-height: 60px;
-
     background: linear-gradient(97.59deg, #46b1de 9.8%, #0591cc 95.1%);
     box-shadow: 0px 2px 10px #46b1de;
     border-radius: 8px;
   }
-
   .first-screen #headPage .buttons #link2 {
     text-decoration: none;
     color: #46b1de;
@@ -1016,14 +1039,12 @@ body {
     width: 180px;
     height: 60px;
     line-height: 60px;
-
     background: #ffffff;
     mix-blend-mode: normal;
     border: 1px solid #dde0dc;
     box-shadow: 0px 2px 10px #dde0dc;
     border-radius: 8px;
   }
-
   .first-screen #headPage #cardContainer {
     max-width: 280px;
     display: flex;
@@ -1033,7 +1054,6 @@ body {
     margin-right: auto;
     flex-wrap: wrap;
   }
-
   .first-screen #headPage #cardContainer .card {
     width: 280px;
     height: 120px;
@@ -1043,43 +1063,35 @@ body {
     box-sizing: border-box;
     z-index: 1;
     align-items: center;
-
     background: #ffffff;
     border: 1px solid #d8e1e1;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
   }
-
   .first-screen #headPage #cardContainer .card .number1 {
     color: #46b1de;
     font-size: 65px;
     margin: 0px 15px 0px 15px;
   }
-
   .first-screen #headPage #cardContainer .card .number2 {
     color: #46b1de;
     font-size: 65px;
     margin: 0px 15px 0px 15px;
   }
-
   .first-screen #headPage #cardContainer .card .number3 {
     color: #46b1de;
     font-size: 65px;
     margin: 0px 15px 0px 15px;
   }
-
   .first-screen #headPage #cardContainer .card #card-text1 {
     font-size: 14px;
   }
-
   .first-screen #headPage #cardContainer .card #card-text2 {
     font-size: 14px;
   }
-
   .first-screen #headPage #cardContainer .card #card-text3 {
     font-size: 14px;
   }
-
   .first-screen #lady {
     z-index: 0;
     position: absolute;
@@ -1087,10 +1099,8 @@ body {
     height: 463px;
     right: 77px;
     top: 200.58px;
-
     background: url(/img/ladyLady.png);
   }
-
   .first-screen #ellipse {
     z-index: 0;
     position: absolute;
@@ -1098,7 +1108,6 @@ body {
     height: 510.48px;
     right: 99.295px;
     top: 164.53px;
-
     background: #ffffff;
     filter: blur(60px);
     transform: rotate(-3.98deg);
@@ -1109,7 +1118,6 @@ body {
     max-width: 992px;
     margin: 0 auto;
   }
-
   .second-screen h2 {
     text-align: center;
     margin: 0px;
@@ -1117,18 +1125,15 @@ body {
     font-family: "Roboto";
     line-height: 130%;
   }
-
   .second-screen h2 #h2textPart {
     color: #46b1de;
     font-family: "Roboto-Bold";
   }
-
   .second-screen #textOfTitle {
     margin: 5px 0px 50px;
     line-height: 140%;
     text-align: center;
   }
-
   .second-screen #cardConSecond {
     max-width: 328px;
     min-width: 328px;
@@ -1143,7 +1148,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
-
   .second-screen #cardConSecond div .card1 {
     margin-bottom: 12px;
   }
@@ -1153,7 +1157,6 @@ body {
   .second-screen #cardConSecond div .card5 {
     margin-bottom: 12px;
   }
-
   .second-screen #cardConSecond div .sixCards {
     background-color: white;
     border-radius: 8px;
@@ -1161,13 +1164,11 @@ body {
     width: 300px;
     height: 176px;
   }
-
   .second-screen #cardConSecond div .sixCards .num_n_text {
     display: flex;
     align-items: center;
     column-gap: 10px;
   }
-
   .second-screen #cardConSecond div .sixCards .num_n_text .num {
     color: #46b1de;
     font-size: 40px;
@@ -1179,23 +1180,19 @@ body {
     font-family: "Roboto-Bold";
     font-size: 18px;
   }
-
   .second-screen #cardConSecond div .sixCards .textOfCard {
     margin-top: 16px;
     line-height: 140%;
   }
-
   .second-screen #servicesCon #whatServices h2 {
     font-size: 34px;
     color: #1b1d1f;
     text-align: center;
     margin-top: 90px;
   }
-
   .second-screen #servicesCon #whatServices h2 span {
     color: #46b1de;
   }
-
   .second-screen #servicesCon #toothCon {
     margin: 50px auto;
     background-image: url(img/);
@@ -1205,53 +1202,44 @@ body {
     flex-direction: column;
     row-gap: 50px;
   }
-
   .second-screen #servicesCon #toothCon #topTooth {
     display: flex;
     column-gap: 30px;
     justify-content: center;
     animation-name: none;
   }
-
+  .second-screen #servicesCon #toothCon #topTooth div {
+    max-width: 316px;
+    height: none;
+  }
   .second-screen #servicesCon #toothCon #middleTooth {
     display: flex;
     column-gap: 30px;
     justify-content: center;
     animation-name: none;
   }
-
+  .second-screen #servicesCon #toothCon #middleTooth div {
+    max-width: 316px;
+    height: none;
+  }
   .second-screen #servicesCon #toothCon #bottomTooth {
     display: flex;
     column-gap: 30px;
     justify-content: center;
     animation-name: none;
   }
-
+  .second-screen #servicesCon #toothCon #bottomTooth div {
+    max-width: 316px;
+    height: none;
+  }
+  .second-screen #servicesCon #toothCon div .firstTextTooth {
+    text-align: end;
+  }
   .second-screen #servicesCon #toothCon div .firstTextTooth .toothH3 {
     font-size: 20px;
     color: #46b1de;
     font-family: "Roboto-Bold";
   }
-
-  .second-screen #servicesCon #toothCon #topTooth div {
-    max-width: 316px;
-    height: none;
-  }
-
-  .second-screen #servicesCon #toothCon #middleTooth div {
-    max-width: 316px;
-    height: none;
-  }
-
-  .second-screen #servicesCon #toothCon #bottomTooth div {
-    max-width: 316px;
-    height: none;
-  }
-
-  .second-screen #servicesCon #toothCon div .firstTextTooth {
-    text-align: end;
-  }
-
   .second-screen #servicesCon #toothCon #ellipsesCon {
     opacity: 0;
     position: absolute;
@@ -1259,7 +1247,13 @@ body {
     width: 0px;
     height: 0px;
   }
-
+  .second-screen #servicesCon div #logoZub {
+    display: block;
+    position: relative;
+    z-index: 0;
+    margin: 50px auto;
+    width: 330px;
+  }
   .second-screen .attentionCon {
     display: flex;
     justify-content: center;
@@ -1268,15 +1262,6 @@ body {
     align-items: center;
     margin-top: 100px;
   }
-
-  .second-screen #servicesCon div #logoZub {
-    display: block;
-    position: relative;
-    z-index: 0;
-    margin: 50px auto;
-    width: 330px;
-  }
-
   .second-screen #inputForm {
     max-width: 422.5px;
     min-height: 265px;
@@ -1290,7 +1275,6 @@ body {
     padding: 9px 12px;
     margin-top: 90px;
   }
-
   .second-screen #inputForm #inputContainer {
     width: 410.5px;
     min-height: 247px;
@@ -1300,18 +1284,15 @@ body {
     color: #1b1d1f;
     padding: 30px 0px 0px;
   }
-
   .second-screen #inputForm #inputContainer h2 {
     font-size: 30px;
     text-align: center;
     line-height: 150%;
   }
-
   .second-screen #inputForm #inputContainer p {
     text-align: center;
     line-height: 140%;
   }
-
   .second-screen #inputForm #inputContainer #formUSER {
     display: flex;
     justify-content: center;
@@ -1321,21 +1302,16 @@ body {
     flex-wrap: wrap;
     row-gap: 32px;
   }
-
   .second-screen #inputForm #inputContainer #formUSER .userINFO {
     width: 233px;
     height: 57px;
-
     background: rgba(217, 217, 217, 0.71);
     border-radius: 8px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     justify-content: space-evenly;
   }
-
   .second-screen #inputForm #inputContainer #formUSER .userINFO .inputLine {
     background: rgba(228, 228, 228, 0.89);
     border: none;
@@ -1343,20 +1319,16 @@ body {
     font-family: "Roboto-Bold";
     width: 150px;
   }
-
   .second-screen #inputForm #inputContainer #formUSER button {
     width: 180px;
     height: 57px;
-
     background: #46b1de;
     border-radius: 8px;
-
     font-family: "Roboto-Bold";
     color: #ffffff;
     font-size: 19px;
     border: none;
   }
-
   .second-screen #bottomPictures {
     display: flex;
     flex-wrap: wrap;
@@ -1374,14 +1346,12 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-
   .footer #footPart {
     display: flex;
     justify-content: center;
     column-gap: 40px;
     justify-content: space-evenly;
   }
-
   .footer #footPart #leftFoot {
     color: #062949;
     display: flex;
@@ -1389,20 +1359,10 @@ body {
     font-size: 16px;
     row-gap: 45px;
   }
-
-  .footer #footPart #rightFoot {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    row-gap: 12px;
-    font-size: 16px;
-  }
-
   .footer #footPart #leftFoot #topPartLeft {
     display: flex;
     align-items: center;
   }
-
   .footer #footPart #leftFoot #topPartLeft #titleFooter {
     font-size: 28px;
     color: #0f2d4a;
@@ -1410,56 +1370,53 @@ body {
     font-family: "SofiaSans";
     line-height: 20px;
   }
-
   .footer #footPart #leftFoot #topPartLeft #titleFooter span {
     font-size: 18px;
   }
-
   .footer #footPart #leftFoot #topPartLeft #logoFooter {
     width: 54.292px;
     height: 56.385px;
   }
-
   .footer #footPart #leftFoot #bottomPartLeft {
     display: flex;
     justify-content: center;
     column-gap: 110px;
     margin-top: 60px;
   }
-
   .footer #footPart #leftFoot #bottomPartLeft div #UaEn {
     color: black;
   }
-
+  .footer #footPart #rightFoot {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    font-size: 16px;
+  }
   .footer #footPart #rightFoot #contacts {
     font-size: 24px;
     font-family: "Roboto-Medium";
   }
-
   .footer #footPart #rightFoot #phone2 {
     display: flex;
     align-items: center;
     column-gap: 15px;
   }
-
   .footer #footPart #rightFoot #socialMedia3 {
     display: flex;
     align-items: center;
     column-gap: 25px;
   }
-
   .footer #footPart #rightFoot #instagram {
     display: flex;
     align-items: center;
     column-gap: 15px;
   }
-
   .footer #footPart #rightFoot #email {
     display: flex;
     align-items: center;
     column-gap: 15px;
   }
-
   .footer #footPart #rightFoot #copyright {
     display: flex;
     justify-content: right;
@@ -1468,664 +1425,15 @@ body {
     line-height: 400%;
   }
 }
-
-@media screen and (max-width: 480px) {
-  * {
-    box-sizing: border-box;
-    margin: 0px;
-  }
-
-  body {
-    position: relative;
-    padding: 0px;
-    margin: 0px auto;
-    font-family: "Roboto";
-    max-width: 480px;
-  }
-
-  .first-screen {
-    background-image: url(img/backgroundTOP.jpg);
-    background-repeat: no-repeat;
-    background-size: unset;
-    height: 663px;
-
-    margin: 0 auto;
-    padding: 20px 0px 0px 0px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-
-  #headPage {
-    max-width: 480px;
-    margin: 0 auto;
-  }
-
-  .headPart {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .headLeft {
-    display: flex;
-    align-items: center;
-  }
-
-  #naviPanel {
-    width: 0px;
-    opacity: 0px;
-    margin: 0px;
-    position: absolute;
-    z-index: -1;
-    /* display: grid;
-    grid-template-columns: repeat(3, auto);
-    column-gap: 54px; */
-  }
-
-  #title {
-    font-size: 22px;
-    margin: 0px;
-    color: #46b1de;
-    line-height: 18px;
-    font-family: "SofiaSans";
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-
-  #title span {
-    font-size: 16px;
-    text-shadow: none;
-  }
-
-  #logo {
-    width: 54.292px;
-    height: 56.385px;
-  }
-
-  /* .naviButton {
-    text-decoration: none;
-    font-size: 16px;
-    color: black;
-    margin-top: 18px;
-    text-align: center;
-  } */
-
-  .headRight {
-    display: flex;
-    align-items: top;
-    margin-top: 0px;
-    padding-top: 17px;
-  }
-
-  #phoneNum {
-    color: black;
-    text-decoration: none;
-    margin-top: 8.5px;
-  }
-
-  #phonePic {
-    margin-top: 6px;
-    margin-right: 5px;
-    width: 24px;
-    height: 24px;
-  }
-
-  #headLanguage {
-    width: 0px;
-    opacity: 0px;
-    margin: 0px;
-    position: absolute;
-    z-index: -1;
-  }
-
-  #headLanguage span {
-    font-family: "Roboto-Bold";
-  }
-
-  #headLanguage #spanEN {
-    font-size: 27px;
-    font-family: "Roboto-Thin";
-  }
-
-  .titleDesribe {
-    margin-top: 130px;
-    position: relative;
-    z-index: 2;
-    padding-left: 0px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .titleDesribe h1 {
-    font-size: 35px;
-    text-transform: uppercase;
-    font-family: "Roboto-Bold";
-    line-height: 45px;
-    letter-spacing: 0.1em;
-  }
-
-  .titleDesribe span {
-    color: #46b1de;
-  }
-
-  .titleDesribe p {
-    text-align: center;
-    max-width: none;
-    max-height: none;
-    font-size: 16px;
-    line-height: 22.4px;
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .buttons {
-    display: flex;
-    gap: 0px 50px;
-    margin-top: 70px;
-    margin-bottom: 130px;
-    position: relative;
-    font-family: "Roboto-Medium";
-    z-index: 2;
-    padding-left: 0px;
-    justify-content: space-evenly;
-  }
-
-  #link1 {
-    /* box-sizing: border-box; */
-    /* display: inline-block; */
-    text-decoration: none;
-    color: whitesmoke;
-    text-align: center;
-    font-size: 19px;
-    width: 180px;
-    height: 60px;
-    line-height: 60px;
-    /* margin-left: 18px;
-    margin-right: 120px; */
-
-    background: linear-gradient(97.59deg, #46b1de 9.8%, #0591cc 95.1%);
-    box-shadow: 0px 2px 10px #46b1de;
-    border-radius: 8px;
-  }
-
-  #link2 {
-    /* box-sizing: border-box; */
-    /* display: inline-block; */
-    text-decoration: none;
-    color: #46b1de;
-    border: 1px solid black;
-    text-align: center;
-    font-size: 19px;
-    width: 180px;
-    height: 60px;
-    line-height: 60px;
-
-    background: #ffffff;
-    mix-blend-mode: normal;
-    border: 1px solid #dde0dc;
-    box-shadow: 0px 2px 10px #dde0dc;
-    border-radius: 8px;
-  }
-
-  #cardContainer {
-    max-width: 480px;
-    display: flex;
-    justify-content: space-evenly;
-    grid-gap: 20px 10px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-wrap: wrap;
-  }
-
-  .card {
-    width: 280px;
-    height: 120px;
-    display: flex;
-    margin: 0px;
-    position: relative;
-    box-sizing: border-box;
-    z-index: 1;
-    align-items: center;
-
-    background: #ffffff;
-    border: 1px solid #d8e1e1;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-  }
-
-  .number1 {
-    color: #46b1de;
-    font-size: 65px;
-    margin: 0px 15px 0px 15px;
-  }
-
-  .number2 {
-    color: #46b1de;
-    font-size: 65px;
-    margin: 0px 15px 0px 15px;
-  }
-
-  .number3 {
-    color: #46b1de;
-    font-size: 65px;
-    margin: 0px 15px 0px 15px;
-  }
-
-  #card-text1 {
-    font-size: 14px;
-  }
-
-  #card-text2 {
-    font-size: 14px;
-  }
-
-  #card-text3 {
-    font-size: 14px;
-  }
-
-  #lady {
-    z-index: 0;
-    position: absolute;
-    width: 572px;
-    height: 463px;
-    right: 67px;
-    top: 200.58px;
-
-    background: url(/img/);
-  }
-
-  #ellipse {
-    z-index: 0;
-    position: absolute;
-    width: 310px;
-    height: 510.48px;
-    right: 89.295px;
-    top: 164.53px;
-
-    background: #ffffff;
-    filter: blur(60px);
-    transform: rotate(-3.98deg);
-  }
-
-  .second-screen {
-    padding: 515px 0px 0px 0px;
-    max-width: 992px;
-    margin: 0 auto;
-  }
-
-  .second-screen h2 {
-    text-align: center;
-    margin: 0px;
-    font-size: 34px;
-    font-family: "Roboto";
-    line-height: 130%;
-  }
-
-  h2 #h2textPart {
-    color: #46b1de;
-    font-family: "Roboto-Bold";
-  }
-
-  #textOfTitle {
-    margin: 5px 0px 50px;
-    line-height: 140%;
-    text-align: center;
-  }
-
-  #cardConSecond {
-    max-width: 328px;
-    min-width: 328px;
-    min-height: 396px;
-    background-color: #a1c7d4;
-    gap: 12px 44px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 12px;
-    padding: 16px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .card1 {
-    margin-bottom: 12px;
-  }
-  .card3 {
-    margin-bottom: 12px;
-  }
-  .card5 {
-    margin-bottom: 12px;
-  }
-
-  .sixCards {
-    background-color: white;
-    border-radius: 8px;
-    padding: 16px;
-    width: 300px;
-    height: 176px;
-  }
-
-  .num_n_text {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-  }
-
-  .num {
-    color: #46b1de;
-    font-size: 40px;
-    display: inline-block;
-  }
-  .numText {
-    color: #46b1de;
-    display: inline-block;
-    font-family: "Roboto-Bold";
-    font-size: 18px;
-  }
-
-  .textOfCard {
-    margin-top: 16px;
-    line-height: 140%;
-  }
-
-  #whatServices h2 {
-    font-size: 34px;
-    color: #1b1d1f;
-    text-align: center;
-    margin-top: 90px;
-  }
-
-  #whatServices h2 span {
-    color: #46b1de;
-  }
-
-  #toothCon {
-    margin: 50px auto;
-    background-image: url(img/);
-    max-width: 480px;
-    height: 765px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 33px;
-    text-align: center;
-  }
-
-  #topTooth {
-    display: flex;
-    flex-direction: column;
-    column-gap: 0px;
-    row-gap: 33px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #middleTooth {
-    display: flex;
-    flex-direction: column;
-    column-gap: 0px;
-    row-gap: 33px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #bottomTooth {
-    display: flex;
-    flex-direction: column;
-    column-gap: 0px;
-    row-gap: 33px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .toothH3 {
-    font-size: 20px;
-    color: #46b1de;
-    font-family: "Roboto-Bold";
-  }
-
-  #topTooth div {
-    max-width: 400px;
-    height: none;
-  }
-
-  #middleTooth div {
-    max-width: 400px;
-    height: none;
-  }
-
-  #bottomTooth div {
-    max-width: 400px;
-    height: none;
-  }
-
-  .firstTextTooth {
-    text-align: center;
-  }
-
-  .attentionCon {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    color: #46b1de;
-    align-items: center;
-    margin-top: 60px;
-    flex-direction: column;
-  }
-
-  #logoZub {
-    display: block;
-    position: relative;
-    z-index: 0;
-    margin: 50px auto;
-    width: 330px;
-  }
-
-  #attentionText {
-    max-width: 300px;
-    text-align: center;
-  }
-
-  #inputForm {
-    max-width: 422.5px;
-    min-height: 265px;
-    margin: 0 auto;
-    border: 1px solid #d9d9d9;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 9px 12px;
-    margin-top: 90px;
-  }
-
-  #inputContainer {
-    width: 410.5px;
-    min-height: 247px;
-    border: 1px solid #d9d9d9;
-    backdrop-filter: blur(2px);
-    border-radius: 10px;
-    color: #1b1d1f;
-    padding: 30px 0px 0px;
-  }
-
-  #inputContainer h2 {
-    font-size: 30px;
-    text-align: center;
-    line-height: 150%;
-  }
-
-  #inputContainer p {
-    text-align: center;
-    line-height: 140%;
-  }
-
-  #formUSER {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 44px 0px 30px 0px;
-    flex-wrap: wrap;
-    row-gap: 32px;
-  }
-
-  .userINFO {
-    width: 233px;
-    height: 57px;
-
-    background: rgba(217, 217, 217, 0.71);
-    border-radius: 8px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    justify-content: space-evenly;
-  }
-
-  .inputLine {
-    background: rgba(228, 228, 228, 0.89);
-    border: none;
-    font-size: 19px;
-    font-family: "Roboto-Bold";
-    width: 150px;
-  }
-
-  #formUSER button {
-    width: 180px;
-    height: 57px;
-
-    background: #46b1de;
-    border-radius: 8px;
-
-    font-family: "Roboto-Bold";
-    color: #ffffff;
-    font-size: 19px;
-    border: none;
-  }
-
-  #bottomPictures {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 90px;
-    margin-bottom: 90px;
-    row-gap: 20px;
-  }
-
-  .footer {
-    padding: 50px 70px 30px 70px;
-    height: 800px;
-    margin-top: 100px;
-    background: linear-gradient(91.75deg, #a1c7d4 18.06%, #0680aa 98.16%);
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #footPart {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 100px;
-  }
-
-  #leftFoot {
-    color: #062949;
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    row-gap: 45px;
-    justify-content: center;
-  }
-
-  #rightFoot {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    row-gap: 12px;
-    font-size: 20px;
-  }
-
-  #topPartLeft {
-    display: flex;
-    align-items: center;
-  }
-
-  #titleFooter {
-    font-size: 22px;
-    color: #0f2d4a;
-    display: inline-block;
-    font-family: "SofiaSans";
-    line-height: 20px;
-  }
-
-  #titleFooter span {
-    font-size: 18px;
-  }
-
-  #logoFooter {
-    width: 54.292px;
-    height: 56.385px;
-  }
-
-  #bottomPartLeft {
-    display: flex;
-    justify-content: center;
-    column-gap: 150px;
-    margin-top: 60px;
-  }
-
-  #UaEn {
-    color: black;
-  }
-
-  #contacts {
-    font-size: 24px;
-    font-family: "Roboto-Medium";
-  }
-
-  #phone2 {
-    display: flex;
-    align-items: center;
-    column-gap: 15px;
-  }
-
-  #socialMedia3 {
-    display: flex;
-    align-items: center;
-    column-gap: 25px;
-  }
-
-  #instagram {
-    display: flex;
-    align-items: center;
-    column-gap: 15px;
-  }
-
-  #email {
-    display: flex;
-    align-items: center;
-    column-gap: 15px;
-  }
-
-  #copyright {
-    display: flex;
-    justify-content: right;
-    font-size: 13px;
-    color: white;
-    line-height: 400%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   * {
     box-sizing: border-box;
     margin: 0px;
   }
 
+  .first-screen {
+    margin: 0px auto 30px;
+  }
   .first-screen #headPage .headPart .burger {
     position: absolute;
     width: 25px;
@@ -2134,30 +1442,12 @@ body {
     top: 70px;
     z-index: 4;
   }
-
-  .first-screen #headPage .headPart .burger span{
+  .first-screen #headPage .headPart .burger span {
     position: absolute;
     width: 25px;
     height: 16px;
     z-index: 5;
   }
-
-  .first-screen #headPage .headPart .burger::before {
-    content: "";
-    width: 25px;
-    height: 2px;
-    position: absolute;
-    top: 0px;
-    background-color: black;
-    transition: 0.5s;
-  }
-
-  .first-screen #headPage .headPart .burger:hover:before{
-    transform:rotate(-45deg);
-    background-color: #0591cc;
-    top: 7px;
-  }
-
   .first-screen #headPage .headPart .burger span::after {
     content: "";
     width: 25px;
@@ -2167,11 +1457,28 @@ body {
     background-color: black;
     transition: 0.5s;
   }
-
-  .first-screen #headPage .headPart .burger span:hover::after{
+  .first-screen #headPage .headPart .burger span:hover::after {
     opacity: 0;
   }
-
+  .first-screen #headPage .headPart .burger::before {
+    content: "";
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: 0px;
+    background-color: black;
+    transition: 0.5s;
+  }
+  .first-screen #headPage .headPart .burger:hover:before {
+    transform: rotate(-45deg);
+    background-color: #0591cc;
+    top: 7px;
+  }
+  .first-screen #headPage .headPart .burger:hover::after {
+    transform: rotate(45deg);
+    background-color: #0591cc;
+    bottom: 7px;
+  }
   .first-screen #headPage .headPart .burger::after {
     content: "";
     width: 25px;
@@ -2182,10 +1489,11 @@ body {
     transition: 0.5s;
   }
 
-  .first-screen #headPage .headPart .burger:hover::after{
-    transform:rotate(45deg);
-    background-color: #0591cc;
-    bottom: 7px;
+  .second-screen {
+    margin: 30px auto 30px;
   }
 
+  .footer {
+    margin: 30px auto 0px;
+  }
 }

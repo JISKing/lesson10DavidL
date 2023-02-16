@@ -1,0 +1,13 @@
+$mainColor: #46b1de;
+
+@mixin triangleDown($borderLeft, $bordeRight, $borderTop, $width, $height) {
+    border-left: $borderLeft;
+    border-right: $bordeRight;
+    border-top: $borderTop;
+    width: $width;
+    height: $height;
+}
+
+#triangle {
+  @include triangleDown(60px solid  transparent, 60px solid  transparent, 70px $mainColor solid, 0, 0);
+}
